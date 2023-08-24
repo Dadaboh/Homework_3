@@ -44,7 +44,7 @@ namespace Homework_3.Game
                 }
 
                 key = random.Next(1, range);
-                //Console.WriteLine(key);
+                Console.WriteLine(key);
 
                 GetUsersAnswer();
 
@@ -268,7 +268,7 @@ namespace Homework_3.Game
         public void ShowHistory()
         {
             Console.WriteLine("---------------------------------------");
-            foreach (var item in Records.OrderByDescending(o => o.Item1).OrderByDescending(o => o.Item2))
+            foreach (var item in Records.OrderByDescending(o => o.Item2).OrderByDescending(o => o.Item1))
             {
                 Console.WriteLine($"Користувач: {item.Item3} | Рівень складності: {item.Item1} | Підказок залишилось: {item.Item2}");
             }
