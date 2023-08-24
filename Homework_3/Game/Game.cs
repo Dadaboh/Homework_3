@@ -44,7 +44,7 @@ namespace Homework_3.Game
                 }
 
                 key = random.Next(1, range);
-                Console.WriteLine(key);
+                //Console.WriteLine(key);
 
                 GetUsersAnswer();
 
