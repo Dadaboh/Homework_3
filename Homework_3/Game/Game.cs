@@ -268,7 +268,7 @@ namespace Homework_3.Game
         public void ShowHistory()
         {
             Console.WriteLine("---------------------------------------");
-            foreach (var item in Records.OrderByDescending(o => o.Item2).OrderByDescending(o => o.Item1))
+            foreach (var item in Records.OrderByDescending(o => o.Item1).ThenByDescending(o => o.Item2))
             {
                 Console.WriteLine($"Користувач: {item.Item3} | Рівень складності: {item.Item1} | Підказок залишилось: {item.Item2}");
             }
